@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="women">
 
 <head>
   <!-- Required meta tags -->
@@ -16,10 +16,13 @@
   <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
 
+  <!--Angular JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
   <title>Hello, world!</title>
 </head>
 
-<body>
+<body ng-controller="organizaciones">
   <div class="container-fluid">
     <section class="row bg">
       <h1>Aquí va el menú</h1>
@@ -36,6 +39,7 @@
     </section>
     <section class="row bg">
       <h1>Mapa</h1>
+      {{prueba}}
       <div style="width: 640px; height: 480px" id="mapContainer">
 
       </div>
@@ -48,6 +52,7 @@
   <!-- Optional JavaScript -->
   <script src="src/js/app.js"></script>
   <script src="src/js/mapaOrg.js"></script>
+  <script src="src/js/indexComponent.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
