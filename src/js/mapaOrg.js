@@ -1,7 +1,23 @@
-var platform = new H.service.Platform({
-    'app_id': '6KZF7fTyJhZnoww41JjO',
-    'app_code': '0DJqkbCOzlBYeMqbXIUw9w'
-  });
+
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  };
+ const showPosition = (data) => {
+     console.log(data)
+     const lati = data.coords.latitude;
+     const london = data.coords.longitude;
+ } 
+
+
+ var platform = new H.service.Platform({
+  'app_id': '6KZF7fTyJhZnoww41JjO',
+  'app_code': '0DJqkbCOzlBYeMqbXIUw9w'
+});
 
 var defaultLayers = platform.createDefaultLayers();
 

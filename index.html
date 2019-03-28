@@ -23,9 +23,43 @@
 </head>
 
 <body ng-controller="organizaciones">
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ser parte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de Nombre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary " href="#">Entrar</a>
+              </li>
+        
+            </ul>
+        
+      </div>
+    </nav>
+  
   <div class="container-fluid">
-    <section class="row bg">
-      <h1>Aquí va el menú</h1>
+    <section class="row">
+        <div class="embed-responsive embed-responsive-16by9" id="video">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R8OOWcsFj0U?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist=5b2R4iZJGWo" allowfullscreen="" allowautoplay=""></iframe>
+        </div>
+        <div class="float-center">YOUR EXPERIENCE STARTS</div><br>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Enquire Now</a>
     </section>
     <section class="row bg2">
       <h1>Imagen 1</h1>
@@ -40,7 +74,12 @@
     <section class="row bg">
       <h1>Mapa</h1>
       {{prueba}}
-      <div style={{position: "absolute", width: "100%", height: "100%", padding: "5%"}} id="mapContainer">
+
+      <div class="col-12" id="mapContainer" style="height: 480px">
+
+      </div>
+
+ 
 
       </div>
     </section>
